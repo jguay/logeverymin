@@ -27,6 +27,12 @@ function showMessages () {
 	done
 }
 
+function terminate_script () {
+	exit 200
+}
+
+trap terminate_script SIGINT SIGTERM SIGHUP
+
 assignSettings
 createLogMessage
 showMessages
