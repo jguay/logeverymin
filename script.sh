@@ -12,7 +12,7 @@ function assignSettings () {
 
 function createLogMessage () {
 	iterations="$(expr $logLength / 5)"
-	for (( i=1 ; i < iterations ; i++)); do
+	for (( i=1 ; i <= iterations ; i++)); do
 		msg="${msg}test "
 	done
 }
